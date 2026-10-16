@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:appointmentdb;MODE=PostgreSQL
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  flyway:
+    enabled: false
+  cache:
+    type: simple
+  kafka:
+    listener:
+      auto-startup: false
