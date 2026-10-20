@@ -11,5 +11,5 @@ WORKDIR /app
 RUN useradd --system --uid 10001 --user-group --create-home spring
 COPY --from=build /workspace/target/appointment-service.jar app.jar
 USER 10001:10001
-EXPOSE 8080
+EXPOSE 8081
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
